@@ -18,9 +18,9 @@ stages{
         steps {
             container('docker') {
                             sh """
-                            docker build . -t dtrapp-dockertrain-fwyi.eastus.cloudapp.azure.com/pipeline-${env.BUILD_ID}
-                            docker login -u locast -p med11158 ee-dtr.sttproductions.de
-                            docker image push dtrapp-dockertrain-fwyi.eastus.cloudapp.azure.com/pipeline:k8s-${env.BUILD_ID}
+                            docker build . -t 34.73.159.116/pipeline-${env.BUILD_ID}
+                            docker login -u locast -p med11158 34.73.159.116
+                            docker image push 34.73.159.116/pipeline:k8s-${env.BUILD_ID}
                             """
                             }
                 }
